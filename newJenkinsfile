@@ -1,7 +1,7 @@
 pipeline {
   environment {
     registry = "sd04/dockerized"
-    registryCredential = 'dockerhub'
+    registryCredential = 'dochub'
     dockerImage = ''
     containerId = sh(script: 'docker ps -aqf "name=node-app"', returnStdout: true)
     }
